@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: bootexampleksmysql
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 32520 
+    selector:
+        app: bootexampleksmysql
