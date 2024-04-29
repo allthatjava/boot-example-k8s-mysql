@@ -10,6 +10,10 @@ NOTE:
 * Application has been developed with DTO pattern
 * Application configured solely to deploy in Kubernetes. Not considered local testing. (Not providing profile configuration)
 
+### Create docker image
+Run the following command on the root directory of the source code  
+`docker build -t boot-example-k8s-mysql .`
+
 ### Create MySQL configuration for Kubernetes
 In the following sequence,
 1. Create configmap yaml
