@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '9288885b-2bef-47dc-9b55-bc4e92313fed'
-  imageRepository: 'bootexamplek8smysql'
+  imageRepository: 'boot-example-k8s-mysql'
   containerRegistry: 'myakscontainerregistries.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile-aks'
   tag: '$(Build.BuildId)'
