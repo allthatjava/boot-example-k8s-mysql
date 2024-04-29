@@ -14,9 +14,8 @@ variables:
   dockerRegistryServiceConnection: '58022839-86b8-4f3e-94c8-83ace49d3031'
   imageRepository: 'bootexampleksmysql'
   containerRegistry: 'k8sregistries.azurecr.io'
-  dockerfilePath: '**/Dockerfile-aks'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile-aks'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'k8sregistries23b9-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
