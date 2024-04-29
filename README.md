@@ -3,7 +3,7 @@ NOTE: port is set as 32520 as NodePort's port of Kubernetes
 * POST `localhost:32520/user/`: adds user object
 * GET `localhost:32520/user/` : returns all users
 * PUT `localhost:32520/user/{id}`: updates user object
-* GET `localhost:32520/user/{id}': returns a single user object or 404 if not found
+* GET `localhost:32520/user/{id}`: returns a single user object or 404 if not found
 * DELETE `localhost:32520/user/{id}`: deletes a single user object from db
 * POST `localhost:32520/user/search`: search with give name and country
 
