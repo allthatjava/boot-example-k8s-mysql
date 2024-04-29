@@ -431,7 +431,7 @@ subjects:
   namespace: default
 ```
 
-### Create Azure Pipeline/Pipeline
+## Create Azure Pipelines/Pipelines
 - Create Pipeline with a few additional option
 1. JavaToolInstaller Task for JDK 17
 2. Maven Task
@@ -440,7 +440,7 @@ subjects:
 5. Publish build artifact task
 ![img/screenshot-01.png](img/screenshot-01.png)
 
-### Create Azure Pipeline/Release
+## Create Azure Pipelines/Releases
 - Create Release Pipeline with configuration files
 ![img/screenshot-02/png](img/screenshot-02.png)
 - Click on 'Tasks' and add 'Replace token' task and 'Kubectl task'
@@ -455,7 +455,8 @@ subjects:
 7. Add `kubectl apply` application deployment
 
 # NOTE
-To give access permission for kubernetese process to pull the image from Container Registries
+To give access permission for kubernetese process to pull the image from Container Registries,
+You should select the Container Registry that you are going to use in 'Integrations' section while create Kubernetes Services
 ![img/screenshot-05.png](img/screenshot-05.png)
-If you missed it while create Azure Kubernetes Service, use the following Azure CLI command to give access
+If you missed it while create Azure Kubernetes Service, use the following Azure CLI command to give access  
 `az aks update -n AKSCluster -g AKSGroup --attach-acr myAKSContainerRegistries`
