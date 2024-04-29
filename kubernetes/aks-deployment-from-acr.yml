@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: boot-example-k8s-mysql
-          image: aksregistries.azurecr.io/boot-example-k8s-mysql:#{Build.BuildId}#
+          image: myakscontainerregistries.azurecr.io/boot-example-k8s-mysql:#{Build.BuildId}#
           ports:
             - containerPort: 8080
           env:
